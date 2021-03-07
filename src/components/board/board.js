@@ -4,8 +4,9 @@ import Piece from '../pieces/piece';
 class Board extends Component {
   constructor(props) {
     super(props);
+    this.grid = [];
     this.state = {
-      board: []
+      board: this.generateBoard()
     }
   }
 
@@ -16,12 +17,12 @@ class Board extends Component {
 
   generateBoard() {
     for (let i = 0; i < 8; i++) {
-      this.state.board.push([]);
+      this.grid.push([]);
       for (let j = 0; j < 8; j++) {
-        const piece = <Piece pos={[i, j]} />
-        this.state.board[i].push(piece)
+        this.grid[i].push(<Piece key={[i, j]} pos={[i, j]}/>)
       }
     }
+    return this.grid;
   }
 
   render() {
