@@ -3,9 +3,7 @@ import Board from '../board/board'
 
 const Game = () => {
   return (
-    <div>
-      <Board />
-    </div>
+    <Board />
   )
 }
 
