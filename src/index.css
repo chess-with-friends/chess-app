@@ -13,6 +13,9 @@ body {
 li {
   list-style: none;
   padding: 0.8rem 1rem;
+  width: 1rem;
+  height: 1.5rem;
+  text-align: center;
   border: 1px solid lightslategray;
   cursor: pointer;
 }
@@ -20,4 +23,12 @@ li {
 ul {
   display: flex;
   flex-wrap: wrap;
+}
+
+ul:nth-child(odd) > li:nth-child(even){
+  background-color:cornflowerblue;
+}
+
+ul:nth-child(even) > li:nth-child(odd){
+  background-color:cornflowerblue;
 }
