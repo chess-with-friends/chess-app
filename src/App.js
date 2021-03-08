@@ -1,6 +1,11 @@
+import Game from './components/game'
+
 function App() {
   return (
-    <h1>Chess With Friends</h1>
+    <div>
+      <h1>Chess With Friends</h1>
+      <Game />
+    </div>
   );
 }
 
