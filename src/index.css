@@ -16,7 +16,6 @@ li {
   width: 1rem;
   height: 1.5rem;
   text-align: center;
-  border: 1px solid lightslategray;
   cursor: pointer;
 }
 
@@ -26,9 +25,17 @@ ul {
 }
 
 ul:nth-child(odd) > li:nth-child(even){
-  background-color:cornflowerblue;
+  background-color:#B58863;
+}
+
+ul:nth-child(odd) > li:nth-child(odd){
+  background-color:#F0D9B5;
 }
 
 ul:nth-child(even) > li:nth-child(odd){
-  background-color:cornflowerblue;
+  background-color:#B58863;
+}
+
+ul:nth-child(even) > li:nth-child(even){
+  background-color:#F0D9B5;
 }

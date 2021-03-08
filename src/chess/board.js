@@ -1,78 +1,12 @@
-class Piece {
-  constructor(color, pos) {
-    this.color = color;
-    this.pos = pos;
-  } 
-}
-
-// for now create an empty piece as placeholder
-class NullPiece extends Piece {
-  constructor(color, pos) {
-    super(color, pos);
-    this.symbol = ""
-  }
-}
-
-class Pawn extends Piece {
-  constructor(color, pos) {
-    super(color, pos);
-    this.symbol = PIECE[this.color].pawn;
-  }
-}
-
-class King extends Piece {
-  constructor(color, pos) {
-    super(color, pos);
-    this.symbol = PIECE[this.color].king;
-  }
-}
-
-class Queen extends Piece {
-  constructor(color, pos) {
-    super(color, pos);
-    this.symbol = PIECE[this.color].queen;
-  }
-}
-
-class Rook extends Piece {
-  constructor(color, pos) {
-    super(color, pos);
-    this.symbol = PIECE[this.color].rook;
-  }
-}
-
-class Bishop extends Piece {
-  constructor(color, pos) {
-    super(color, pos);
-    this.symbol = PIECE[this.color].bishop;
-  }
-}
-
-class Knight extends Piece {
-  constructor(color, pos) {
-    super(color, pos);
-    this.symbol = PIECE[this.color].knight;
-  }
-}
-
-const PIECE = {
-  white: {
-    king:	'♔',
-    queen: '♕',
-    rook:	'♖',
-    bishop:	'♗',
-    knight:	'♘',
-    pawn: '♙'
-  },
-  black: {
-    king:	'♚',
-    queen:	'♛',
-    rook:	'♜',
-    bishop:	'♝',
-    knight:	'♞',
-    pawn:	'♟︎'
-  }
-}
+import {
+  Pawn,
+  Rook,
+  Knight,
+  Bishop,
+  Queen,
+  King,
+  NullPiece 
+} from './pieces';
 
 class Board {
   constructor() {
