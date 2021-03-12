@@ -9,12 +9,18 @@ export default class Game extends Component {
     this.state = {
       board
     }
+    this.updateBoard = this.updateBoard.bind(this);
+  }
+
+  // update state whenever board instance is updated
+  updateBoard(board) {
+    this.setState(board);
   }
 
   render() {
     return (
       <div>
-        <BoardView board={this.state.board} />
+        <BoardView board={this.state.board} updateBoard={this.updateBoard}/>
       </div>
     )
   }
