@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import sprite from './sprite.svg';
 
 export default class Piece extends Component {
   constructor(props) {
@@ -6,7 +7,9 @@ export default class Piece extends Component {
   }
   render() {
     return (
-      <h2>{this.props.piece.symbol}</h2>
+      <svg className="piece">
+        <use href={sprite + `#${this.props.piece.color}-${this.props.piece.constructor.name.toLowerCase()}`} />
+      </svg>
     )
   }
 }
