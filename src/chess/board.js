@@ -7,12 +7,10 @@ import {
   King,
   NullPiece 
 } from './pieces';
-import { Piece } from './pieces/piece';
 
 class Board {
   constructor() {
     this.grid = []
-    this.sentinel = new NullPiece();
     this.makeStartingGrid()
   }
 
