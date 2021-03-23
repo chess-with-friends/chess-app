@@ -1,9 +1,9 @@
-const Board = require('./board');
+import Board from "./board"
 
 class Game {
   constructor() {
-    this.board = new Board ();
+    this.board = new Board()
   }
 }
 
-export default Game;
+export default Game

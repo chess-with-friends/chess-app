@@ -7,7 +7,7 @@ function App() {
       <h1>Chess With Friends</h1>
       <Game />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
